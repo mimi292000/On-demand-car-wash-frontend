@@ -1,0 +1,38 @@
+<div class="main-body" style="background-image: linear-gradient(125deg,#6a89cc,#b8e994);">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+   <span style="color: aquamarine; position: center; left: 0cm; right: 10cm; font-family: 'Quicksand', sans-serif; font-stretch: expanded;"><b><h1>WASHPACKS WE PROVIDE</h1></b></span> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"> 
+    <span class="navbar-toggler-icon"></span> 
+    </button> 
+    <div class="collapse navbar-collapse" id="navbarColor02"> 
+       <ul class="navbar-nav mr-auto"> 
+          <li class="nav-item active"> 
+           
+          </li> 
+       </ul> 
+       <form class="form-inline my-2 my-lg-0"> 
+       </form> 
+    </div> 
+  </nav> 
+  <div style="padding: 5cm;" class="container" id="main-container"> 
+  <div class="row"> 
+    <div *ngFor="let washpack of washpacks" class="col-md-6 col-xl-3"> 
+       <div class="card m-b-30"> 
+          <div style="width: 20cm;" class="card-body row"> 
+             <div class="col-6 card-title align-self-center mb-0"> 
+                <h5>{{washpack?.packname}}</h5> 
+                <p class="m-0">Cost : {{washpack?.cost}}</p> 
+             </div> 
+          </div> 
+          <ul class="list-group list-group-flush"> 
+             <li class="list-group-item"><i class="fa fa-envelope float-right"></i>Description : {{washpack?.description}}</li> 
+             
+          </ul> 
+          
+       </div> 
+    </div> 
+  </div>
+  </div> 
+
+ 

@@ -1,0 +1,46 @@
+<div class="main-body" style="background-image: linear-gradient(125deg,#6a89cc,#b8e994);">
+
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="container text-center">
+                    
+                </div>
+                <h1 style="margin: 1cm" class="text-center">ADD WASHPACK </h1>
+                    <form #washpacks="ngForm" style="color: blueviolet" (ngSubmit)="addwashpacks(washpacks)" >
+                        Washpack Name
+                        <mat-form-field style="color: black" class="full-width" appearance="outline">
+                            <mat-label>packname</mat-label>
+                            <input type="text" #packname (ngModel)="packname" matInput  name="packname" id="packname">
+                        </mat-form-field>
+                        Washpack Description
+                        <mat-form-field style="color: black" class="full-width" appearance="outline">
+                            <mat-label>description</mat-label>
+                            <input type="description" #description (ngModel)="description" matInput name="description" id="description">
+                        </mat-form-field>
+                        Washpack Cost
+                        <mat-form-field style="color: black" class="full-width" appearance="outline">
+                            <mat-label>cost</mat-label>
+                            <input type="cost" #cost (ngModel)="cost" matInput name="cost" id="cost">
+                        </mat-form-field>
+                       <table>
+                           <tr> <td><div class="container full-width">
+                            <input type="submit" value="Add Washpack" class="btn btn-primary w-100">
+                        </div></td>
+
+                        <td><div class="container full-width">
+                            <button type="reset" mat-raised-button color="accent">reset</button>
+                        </div></td>
+                    
+                    </tr>
+                       </table>
+
+                    </form>
+                    
+                    
+            </div>
+
+        </div>
+    </div>
+</div>

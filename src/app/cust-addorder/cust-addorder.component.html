@@ -1,0 +1,66 @@
+<div class="main-body" style="background-image: linear-gradient(125deg,#ebedf3,#e9dc94);">
+
+
+<div class="bootstrap-wrapper">
+  <div class="container">
+    
+
+      <div class="row">
+          <div class="col-md-6 offset-md-3">
+              <div class="container text-center">
+                
+  
+              </div>
+              <h1 style="margin: 1cm" class="text-center">ADD ORDER </h1>
+                  <form #addOrder="ngForm" style="color: rgb(42, 7, 75)" (ngSubmit)="addorder(addOrder)" >
+                      CarName
+                      <mat-form-field style="color: black" class="full-width" appearance="outline">
+                          <mat-label>carname</mat-label>
+                          <input type="text" #CarName (ngModel)="CarName" matInput  name="CarName" id="CarName">
+                      </mat-form-field>
+                      Model
+                      <mat-form-field style="color: black" class="full-width" appearance="outline">
+                          <mat-label>Model</mat-label>
+                          <input type="text" #Model (ngModel)="Model" matInput  name="Model" id="Model">
+                      </mat-form-field>
+                      WashpackName
+                      <mat-form-field style="color: black" class="full-width" appearance="outline">
+                          <mat-label>washpackName</mat-label>
+                          <input type="text" #washpackName (ngModel)="washpackName" matInput  name="washpackName" id="washpackName">
+                      </mat-form-field>
+                      WashpackId
+                      <mat-form-field style="color: black" class="full-width" appearance="outline">
+                          <mat-label>washpackId</mat-label>
+                          <input type="number" #washpackId (ngModel)="washpackId" matInput  name="washpackId" id="washpackId">
+                      </mat-form-field>
+                      Date
+                      <mat-form-field style="color: black" class="full-width" appearance="outline">
+                          <mat-label>Date</mat-label>
+                          <input type="text" #Date (ngModel)="Date" matInput  name="Date" id="Date">
+                      </mat-form-field>
+                      Contact
+                      <mat-form-field style="color: black" class="full-width" appearance="outline">
+                          <mat-label>Contact</mat-label>
+                          <input type="number" #contact (ngModel)="contact" matInput  name="contact" id="contact">
+                      </mat-form-field>
+                     <table>
+                         <tr> <td><div class="container full-width">
+                          <input style="margin-bottom: 2cm" type="submit" value="Order" class="btn btn-primary w-100">
+                      </div></td>
+
+                      <td><div class="container full-width">
+                          <button style="margin-bottom: 2cm" type="reset" mat-raised-button color="accent">Reset</button>
+                      </div></td>
+                  
+                  </tr>
+                     </table>
+
+                  </form>
+                  
+                  
+          </div>
+
+      </div>
+  </div>
+</div>
+</div>

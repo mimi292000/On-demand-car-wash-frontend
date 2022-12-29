@@ -1,0 +1,37 @@
+
+
+    <div class="container">
+        
+    <div class="card mt-5" style="align-items: center;">
+        
+  <h1>ADMIN REGISTRATION</h1>
+    </div>
+    <div class="card mt-5" style="padding: 20px;">
+        <form #registerForm= "ngForm" (ngSubmit)="register(registerForm)">
+            
+                
+            <div class="form-group">
+                <label for="id"> Admin id: </label>
+                <input type="text" #id (ngModel)="id" name="id" id="id" class="form-control" placeholder="Admin id">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="name"> Admin Name: </label>
+                <input type="text" #name (ngModel)="name" name="name" id="name" class="form-control" placeholder="Admin Name">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="password"> Admin Password: </label>
+                <input type="password" #password (ngModel)="password" name="password" id="password" class="form-control" placeholder="Admin password">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Register" class="btn btn-primary w-100">
+            </div>
+            <br>
+            <button mat-raised-button color="accent">Have an account? Login!</button>
+        </form>
+    </div>
+</div>
+
+

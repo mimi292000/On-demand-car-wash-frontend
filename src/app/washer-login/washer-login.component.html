@@ -1,0 +1,43 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="container text-center">
+                    
+                </div>
+                <h1 style="margin: 1cm" class="text-center">WASHER LOGIN </h1>
+                    <form #loginForm="ngForm" style="color: blueviolet" (ngSubmit)="login(loginForm)" >
+                        Username
+                        <mat-form-field style="color: black" class="full-width" appearance="outline">
+                            <mat-label>username</mat-label>
+                            <input type="text" #username (ngModel)="username" matInput  name="username" id="username">
+                        </mat-form-field>
+                        password
+                        <mat-form-field style="color: black" class="full-width" appearance="outline">
+                            <mat-label>password</mat-label>
+                            <input type="password" #password (ngModel)="password" matInput name="password" id="password">
+                        </mat-form-field>
+                       <table>
+                           <tr> <td><div class="container full-width">
+                            <input type="submit" value="Login" class="btn btn-primary w-100">
+                        </div></td>
+
+                        <td><div class="container full-width">
+                            <button type="reset" mat-raised-button color="accent">reset</button>
+                        </div></td>
+                    <td><div class="container full-width">
+                        <a routerLink="/washer-login" mat-raised-button color="accent"> New user ?</a>
+                     </div>
+                    </td>
+                    </tr>
+                       </table>
+
+                    </form>
+                    
+                    
+            </div>
+
+        </div>
+    </div>
+</div>
+

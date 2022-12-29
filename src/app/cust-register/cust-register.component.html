@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="card mt-5" style="align-items: center;">
+  <h1>CUSTOMER REGISTRATION</h1>
+    </div>
+    <div class="card mt-5" style="padding: 20px;">
+        <form #registerForm= "ngForm" (ngSubmit)="register(registerForm)">
+            
+            <div class="form-group">
+                <label for="name"> Customer Name: </label>
+                <input type="text" #name (ngModel)="name" name="name" id="name" class="form-control" placeholder="Customer Name">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="id"> Customer Username: </label>
+                <input type="text" #username (ngModel)="username" name="username" id="username" class="form-control" placeholder="Customer Username">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="password"> Customer Password: </label>
+                <input type="password" #password (ngModel)="password" name="password" id="password" class="form-control" placeholder="Customer Password">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="confirmpassword"> Confirm Password: </label>
+                <input type="password" #confirmpassword (ngModel)="confirmpassword" name="confirmpassword" id="confirmpassword" class="form-control" placeholder="Confirm Password">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="contactno"> Customer Contact No.: </label>
+                <input type="text" #contactno (ngModel)="contactno" name="contactno" id="contactno" class="form-control" placeholder="Contact No.">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="email"> Customer Email: </label>
+                <input type="text" #email (ngModel)="email" name="email" id="email" class="form-control" placeholder="Email id">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Register" class="btn btn-primary w-100">
+            </div>
+            <br>
+            <button mat-raised-button color="accent" routerLink="/customer-login">Have an account? Login!</button>
+        </form>
+    </div>
+</div>
+
+
